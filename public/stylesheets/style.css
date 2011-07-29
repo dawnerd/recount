@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquot
 /* tables still need 'cellspacing="0"' in the markup */
 table { border-collapse: collapse; border-spacing: 0; }
 
-body { font: 13px "Lucida Grande", Helvetica, Arial, sans-serif; color: #4c4c4c; }
+body { font: 13px "Lucida Grande", Helvetica, Arial, sans-serif; color: #4c4c4c; background: #eee url('../images/bg_texture.png'); }
 p { margin-bottom: 15px; }
 a { color: #00B7FF; }
 h1 { font-size: 24px; }
@@ -24,7 +24,10 @@ html .FLC { #height: 1%; }
 .fl { float: left; }
 .fr { float: right; }
 
-.box { float: left; margin: 0 15px 15px 0; border: 1px solid #aaa; border-top: 1px solid #ccc; border-left: 1px solid #ccc; background: #eee; position: relative; }
+.box { margin: 0 15px 25px 0; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ccc; background: #f6f6f6; }
+.box { box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);}
+.box, .box .wrapper { float: left; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position: relative; }
+	.box .wrapper { border: 1px solid #fff; }
 .box:nth-child(3n+3) { margin-right: 0; }
 	.box img { margin-bottom: 10px; }
 
@@ -32,6 +35,7 @@ html .FLC { #height: 1%; }
 	#Projects .header h1 { font-size: 36px; }
 
 #Projects .box { width: 308px; height: 400px; overflow: hidden; }
+	#Projects .box .wrapper { width: 306px; height: 398px; overflow: hidden; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 390px; padding: 15px; }
 	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 5px 0; }
 #Polls .box { width: 100%; height: auto; }
