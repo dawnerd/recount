@@ -9,6 +9,11 @@ a { color: #00B7FF; }
 h1 { font-size: 24px; }
 h2 { font-size: 18px; }
 
+/* =Float Container */
+.FLC { clear:both; }
+.FLC:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+html .FLC { #height: 1%; }
+
 /* ----- CLASSES ----- */
 
 .wrapper { margin: 0 auto; width: 960px; position: relative; clear: both; }
@@ -30,3 +35,5 @@ h2 { font-size: 18px; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 390px; padding: 15px; }
 	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 5px 0; }
 #Polls .box { width: 100%; height: auto; }
+
+#Projects .slider { width: 700px; }
