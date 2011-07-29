@@ -4,13 +4,18 @@ div.box.projectContainer
       div.project
         a(href="#{projects[indexInCollection].url}")
           img(src="#{projects[indexInCollection].img}")
-        h2 #{projects[indexInCollection].name}
+        a(href="#{projects[indexInCollection].url}")
+          h2 #{projects[indexInCollection].name}
         p.description #{projects[indexInCollection].desc}
-        div.authors #{projects[indexInCollection].authors.join(', ')}
+        div.authors 
+          strong Created by:&nbsp; 
+          #{projects[indexInCollection].authors.join(', ')}
         div.footer
           button.voteButton Vote
       div.vote
         h2 #{projects[indexInCollection].name}
+        p
+          strong Like me? - Vote for me below.
         div.scroller
           - each poll in polls
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}

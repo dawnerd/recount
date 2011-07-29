@@ -5,7 +5,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font: 13px "Lucida Grande", Helvetica, Arial, sans-serif; color: #4c4c4c; background: #eee url('../images/bg_texture.png'); }
 p { margin-bottom: 15px; }
-a { color: #00B7FF; }
+a { color: #00B7FF; text-decoration: none; }
 h1 { font-size: 24px; }
 h2 { font-size: 18px; }
 
@@ -37,6 +37,7 @@ html .FLC { #height: 1%; }
 #Projects .box { width: 308px; height: 400px; overflow: hidden; }
 	#Projects .box .wrapper { width: 306px; height: 398px; overflow: hidden; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 385px; padding: 15px 15px 0; position: relative; }
+	#Projects .box .authors { font-size: 11px; color: #888; }
 	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; }
 		#Projects .box .footer button { float: right; margin-right: 15px; }
   #Projects .box .scroller { margin-top: 15px; height: 300px; overflow: auto; }
