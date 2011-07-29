@@ -40,7 +40,7 @@ html .FLC { #height: 1%; }
 	#Projects .box .authors { font-size: 11px; color: #888; }
 	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; }
 		#Projects .box .footer button { float: right; margin-right: 15px; }
-  #Projects .box .scroller { margin-top: 15px; height: 300px; overflow: auto; }
+  #Projects .box .scroller { margin-top: 15px; height: 275px; overflow: auto; }
   #Projects .box .checkbar { padding: 5px; display: block; margin: 10px 0; font-weight: bold; text-decoration: none; }
     #Projects .box .checkbar:hover { background: #eee; }
     #Projects .box .checkbar .description { display: block; font-weight: normal; font-size: 10px; }
