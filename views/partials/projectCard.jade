@@ -10,5 +10,6 @@ div.ProjectContainer
     div.scroller
       - each poll in polls
         a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
+          span.description #{poll.description}
     div.footer
       button Done
