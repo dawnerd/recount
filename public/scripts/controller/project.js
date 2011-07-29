@@ -10,14 +10,16 @@ var ProjectController = $.Fidel.extend({
       self.hideVoteBox(e);
     });
 
+    this.el.find('.checkbar').bind('click', function(e){
+      self.toggleCheckbar(this, e);
+    });
+
   },
   showVoteBox: function(e) {
     if(e) e.preventDefault();
 
     var parent = $(e.target).closest('.projectContainer'),
         slider = parent.find('.slider');
-
-    console.log(parent, slider)
 
     slider.animate({marginLeft: '-308px', duration: 250});
   },
@@ -27,8 +29,20 @@ var ProjectController = $.Fidel.extend({
     var parent = $(e.target).closest('.projectContainer'),
         slider = parent.find('.slider');
 
-    console.log(parent, slider)
-
     slider.animate({marginLeft: '0', duration: 250});
+  },
+  toggleCheckbar: function(element, e) {
+    if(e) e.preventDefault();
+
+    var vote = $(element),
+        status = vote.attr('data-status');
+
+    if(status === 'selected') {
+      vote.removeClass('selected');
+      vote.attr('data-status', '');
+    } else {
+      vote.addClass('selected');
+      vote.attr('data-status', 'selected');
+    }
   }
 });

@@ -42,5 +42,6 @@ html .FLC { #height: 1%; }
   #Projects .box .scroller { margin-top: 15px; height: 300px; overflow: auto; }
   #Projects .box .checkbar { display: block; margin: 10px 0; }
     #Projects .box .checkbar .description { display: block; }
+  #Projects .box .checkbar.selected { background: blue; color: #fff; }
 
 #Projects .slider { width: 700px; }
