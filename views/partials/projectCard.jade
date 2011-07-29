@@ -5,13 +5,16 @@ div.box.projectContainer
       div.project(data-project="#{project.id}")
         a(href="#{project.url}")
           img(src="#{project.img}")
-        h2 #{project.name}
+        a(href="#{project.url}")
+          h2 #{project.name}
         p.description #{project.desc}
         div.authors #{project.authors.join(', ')}
         div.footer
           button.voteButton Vote
       div.vote
         h2 #{project.name}
+        p
+          strong Like me? - Vote for me below.
         div.scroller
           - each poll in polls
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
