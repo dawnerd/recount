@@ -1,0 +1,1 @@
+var project = new ProjectController({ el: $('#Projects') });
