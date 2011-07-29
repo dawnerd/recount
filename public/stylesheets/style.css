@@ -24,7 +24,7 @@ html .FLC { #height: 1%; }
 .fl { float: left; }
 .fr { float: right; }
 
-.box { margin: 0 15px 25px 0; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ccc; background: #f6f6f6; }
+.box { margin: 0 15px 20px 0; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ccc; background: #f6f6f6; }
 .box { box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);}
 .box, .box .wrapper { float: left; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position: relative; }
 	.box .wrapper { border: 1px solid #fff; }
