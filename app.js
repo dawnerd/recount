@@ -6,10 +6,14 @@
 var express = require('express'),
     io = require('socket.io'),
     projects = require('./config/projects'),
-    polls = require('./config/polls');
+    polls = require('./config/polls'),
+    app = module.exports = express.createServer(),
+    io = io.listen(app),
+    RedisStore = require('connect-redis')(express),
+    jeb = require('./lib/jeb');
 
-var app = module.exports = express.createServer(),
-    io = io.listen(app);
+
+jeb = new jeb(app);
 
 // Configuration
 app.configure(function(){
@@ -18,6 +22,8 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+  app.use(express.cookieParser());
+  app.use(express.session({ secret: "8497r8h3fkshjfhgo843y", store: new RedisStore }));
   app.use(express.static(__dirname + '/public'));
 });
 
