@@ -1,0 +1,7 @@
+div.project
+  a(href="#{projects[indexInCollection].url}")
+    img(src="#{projects[indexInCollection].img}")
+  h2 #{projects[indexInCollection].name}
+  p.description #{projects[indexInCollection].desc}
+  div.authors #{projects[indexInCollection].authors.join(', ')}
+  button Vote

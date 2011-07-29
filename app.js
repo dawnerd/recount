@@ -3,12 +3,14 @@
  * Module dependencies.
  */
 
-var express = require('express');
+var express = require('express'),
+    io = require('socket.io'),
+    projects = require('./config/projects.js'),
+    polls = require('./config/polls.js');
 
 var app = module.exports = express.createServer();
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -27,10 +29,11 @@ app.configure('production', function(){
 });
 
 // Routes
-
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'Recount',
+    projects: projects,
+    polls: polls
   });
 });
 
