@@ -1,16 +1,17 @@
 div.box.projectContainer
   div.wrapper
     div.slider.FLC
-      div.project
-        a(href="#{projects[indexInCollection].url}")
-          img(src="#{projects[indexInCollection].img}")
-        h2 #{projects[indexInCollection].name}
-        p.description #{projects[indexInCollection].desc}
-        div.authors #{projects[indexInCollection].authors.join(', ')}
+      - var project = projects[indexInCollection]
+      div.project(data-project="#{project.id}")
+        a(href="#{project.url}")
+          img(src="#{project.img}")
+        h2 #{project.name}
+        p.description #{project.desc}
+        div.authors #{project.authors.join(', ')}
         div.footer
           button.voteButton Vote
       div.vote
-        h2 #{projects[indexInCollection].name}
+        h2 #{project.name}
         div.scroller
           - each poll in polls
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
