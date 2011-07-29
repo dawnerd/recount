@@ -43,6 +43,6 @@ html .FLC { #height: 1%; }
   #Projects .box .checkbar { padding: 5px; display: block; margin: 10px 0; font-weight: bold; text-decoration: none; }
     #Projects .box .checkbar:hover { background: #eee; }
     #Projects .box .checkbar .description { display: block; font-weight: normal; font-size: 10px; }
-  #Projects .box .checkbar.selected { background: blue; color: #fff; }
+  #Projects .box .checkbar.selected { background: #666; color: #fff; }
 
 #Projects .slider { width: 700px; }
