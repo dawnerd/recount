@@ -46,6 +46,6 @@ console.log("Express server listening on port %d in %s mode", app.address().port
 
 io.sockets.on('connection', function (socket) {
   socket.on("vote", function(data){
-    Jeb.vote(data.poll_id, data.project_id)
+    jeb.vote(data.poll_id, data.project_id)
   });
 });
