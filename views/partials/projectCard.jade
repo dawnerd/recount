@@ -10,6 +10,7 @@ div.box.projectContainer
         div.footer
           button.voteButton Vote
       div.vote
+        h2 #{projects[indexInCollection].name}
         div.scroller
           - each poll in polls
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}

@@ -39,5 +39,8 @@ html .FLC { #height: 1%; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 385px; padding: 15px 15px 0; position: relative; }
 	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; }
 		#Projects .box .footer button { float: right; margin-right: 15px; }
+  #Projects .box .scroller { margin-top: 15px; height: 300px; overflow: auto; }
+  #Projects .box .checkbar { display: block; margin: 10px 0; }
+    #Projects .box .checkbar .description { display: block; }
 
 #Projects .slider { width: 700px; }
