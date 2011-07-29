@@ -8,7 +8,8 @@ var express = require('express'),
     projects = require('./config/projects.js'),
     polls = require('./config/polls.js');
 
-var app = module.exports = express.createServer();
+var app = module.exports = express.createServer(),
+    io = io.listen(app);
 
 // Configuration
 app.configure(function(){
@@ -37,5 +38,10 @@ app.get('/', function(req, res){
   });
 });
 
-app.listen(3001);
+app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+
+
+io.sockets.on('connection', function (socket) {
+  
+});
