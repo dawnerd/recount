@@ -14,4 +14,5 @@ div.box.projectContainer
           - each poll in polls
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
               span.description #{poll.description}
-        button.doneButton Done
+        div.footer
+          button.doneButton Done

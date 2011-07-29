@@ -36,8 +36,8 @@ html .FLC { #height: 1%; }
 
 #Projects .box { width: 308px; height: 400px; overflow: hidden; }
 	#Projects .box .wrapper { width: 306px; height: 398px; overflow: hidden; }
-	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 390px; padding: 15px; }
-	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 5px 0; }
-#Polls .box { width: 100%; height: auto; }
+	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 385px; padding: 15px 15px 0; position: relative; }
+	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; }
+		#Projects .box .footer button { float: right; margin-right: 15px; }
 
 #Projects .slider { width: 700px; }
