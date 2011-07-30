@@ -8,7 +8,9 @@ div.box.projectContainer
         a(href="#{project.url}")
           h2 #{project.name}
         p.description #{project.desc}
-        div.authors #{project.authors.join(', ')}
+        div.authors 
+          strong Created By: &nbsp;
+          #{project.authors.join(', ')}
         div.footer
           button.voteButton Vote
       div.vote
