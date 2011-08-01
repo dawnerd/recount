@@ -1,8 +1,8 @@
-div.box.projectContainer
+- var project = projects[indexInCollection]
+div.box.projectContainer(data-project="#{project.id}")
   div.wrapper
     div.slider.FLC
-      - var project = projects[indexInCollection]
-      div.project(data-project="#{project.id}")
+      div.project
         a(href="#{project.url}")
           img(src="#{project.img}")
         a(href="#{project.url}")
@@ -22,4 +22,5 @@ div.box.projectContainer
             a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
               span.description #{poll.description}
         div.footer
-          button.doneButton Done
+          a(href="#").cancel cancel
+          button.doneButton Submit Vote

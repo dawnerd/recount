@@ -38,12 +38,15 @@ html .FLC { #height: 1%; }
 	#Projects .box .wrapper { width: 306px; height: 398px; overflow: hidden; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 385px; padding: 15px 15px 0; position: relative; }
 	#Projects .box .authors { font-size: 11px; color: #888; }
-	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; }
-		#Projects .box .footer button { float: right; margin-right: 15px; }
+	#Projects .box .footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; text-align: right; }
+    #Projects .box .footer a { margin-right: 10px; font-size: 10px; text-decoration: underline; }
+		#Projects .box .footer button { margin-right: 15px; }
   #Projects .box .scroller { margin-top: 15px; height: 275px; overflow: auto; }
   #Projects .box .checkbar { padding: 5px; display: block; margin: 10px 0; font-weight: bold; text-decoration: none; }
-    #Projects .box .checkbar:hover { background: #eee; }
+    #Projects .box .checkbar:hover { background: #B2B2A6; color: #fff; }
     #Projects .box .checkbar .description { display: block; font-weight: normal; font-size: 10px; }
-  #Projects .box .checkbar.selected { background: #666; color: #fff; }
+  #Projects .box .checkbar.selected { background: #383A47; color: #fff; }
+  #Projects .box .checkbar.unavailable { background: #ccc; color: #4c4c4c; opacity: .25; cursor: default; }
+  #Projects .box .checkbar.voted { background: #5A5A64; color: #fff; }
 
 #Projects .slider { width: 700px; }
