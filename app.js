@@ -56,4 +56,8 @@ io.sockets.on('connection', function (socket) {
   socket.on("vote", function(data){
     jeb.vote(data.poll_id, data.project_id)
   });
+
+  jeb.on('voted', function(data) {
+    socket.emit('votes', data);
+  })
 });

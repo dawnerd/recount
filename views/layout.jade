@@ -12,3 +12,6 @@ html
     script(src="/socket.io/socket.io.js")
     script
       var socket = io.connect('http://recount.ehowdev.com');
+      socket.on('votes', function(data) {
+        console.log(data);
+      })
