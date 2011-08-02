@@ -6,7 +6,7 @@ module.exports = [
   },
   {
     id: 2,
-    colors: [ 'AA00A2', '7F207B', ' 6E0069', 'D435CD', 'D460CF' ],
+    colors: [ 'AA00A2', '7F207B', '6E0069', 'D435CD', 'D460CF' ],
     scheme: 'magentas'
   },
   {

@@ -73,7 +73,7 @@ function updateResults(data) {
 					percent = Math.round(project.count / poll.count * 100);
 
 			if(isNaN(percent) || !isFinite(percent)) {
-				percent = '1px';
+				percent = '5px';
 			} else {
 				percent = percent+'%';
 			}
