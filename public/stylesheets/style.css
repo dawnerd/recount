@@ -34,6 +34,8 @@ html .FLC { #height: 1%; }
 .header { float: left; width: 100%; padding: 25px 0; }
 	.header h1 { font-size: 36px; }
 
+.inset { text-shadow: #fff 0 2px 1px, #ddd 0 -1px 0;}
+
 #Projects .box { width: 308px; height: 400px; overflow: hidden; }
 	#Projects .box .wrapper { width: 306px; height: 398px; overflow: hidden; }
 	#Projects .box .project, #Projects .box .vote { float: left; width: 278px; height: 385px; padding: 15px 15px 0; position: relative; }
@@ -50,3 +52,6 @@ html .FLC { #height: 1%; }
   #Projects .box .checkbar.voted { background: #5A5A64; color: #fff; }
 
 #Projects .slider { width: 700px; }
+
+#Results .box .poll { float: left; padding: 15px; position: relative; }
+	#Results .box .footer { float: right; clear: both; padding: 0 15px 15px 0; } 
