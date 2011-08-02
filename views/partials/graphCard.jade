@@ -1,8 +1,7 @@
-- var project = projects[indexInCollection]
-div.box.projectContainer(data-project="#{project.id}")
+- var poll = polls[indexInCollection]
+div.box.projectContainer(data-poll="#{poll.id}")
   div.wrapper
-    div.slider.FLC
-      div.graph
-        Booga boo
-        div.footer
-          a(href="#").hide Hide
+    div.poll
+      h2 #{poll.name}
+    div.footer
+      a(href="#").hide Hide
