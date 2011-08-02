@@ -81,6 +81,10 @@ function updateResults(data) {
 			poll_container.find('dd[data-id="'+project.project_id+'"] .bar').animate({
 				'width': percent
 			});
+
+      if(project.count>0) {
+        poll_container.find('dd[data-id="'+project.project_id+'"] .bar').html('<span>'+project.count+'</span>');
+      }
 		}
 	}
 }
