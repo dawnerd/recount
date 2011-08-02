@@ -3,5 +3,10 @@ div.box.projectContainer(data-poll="#{poll.id}")
   div.wrapper
     div.poll
       h2 #{poll.name}
+      dl.FLC
+        - each project in projects
+          dt(data-id="#{project.id}") #{project.name}
+          dd(data-id="#{project.id}")
+            div.bar(style="width: 50%")
     div.footer
       a(href="#").hide Hide

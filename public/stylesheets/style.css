@@ -53,5 +53,14 @@ html .FLC { #height: 1%; }
 
 #Projects .slider { width: 700px; }
 
-#Results .box .poll { float: left; padding: 15px; position: relative; }
-	#Results .box .footer { float: right; clear: both; padding: 0 15px 15px 0; } 
+#Results .box .poll { width: 100%; float: left; padding: 15px; position: relative; }
+	#Results .box .footer { float: right; clear: both; padding: 0 15px 15px 0; }
+  #Results .box dl { width: 930px; margin-top: 15px; }
+    #Results .box dt,
+    #Results .box dd { height: 20px; margin: 5px 0; border-bottom: 1px solid #ccc; }
+    #Results .box dt { clear: left; float: left; width: 200px; font-weight: bold; }
+    #Results .box dd { float: left; width: 730px; }
+      #Results .box dd .bar { height: 15px; background: red; }
+
+
+
