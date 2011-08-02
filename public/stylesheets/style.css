@@ -34,6 +34,7 @@ html .FLC { #height: 1%; }
 
 .header { float: left; width: 100%; padding: 25px 0; }
 	.header h1 { font-size: 36px; float: left; }
+		.header .logo { float: left; margin-right: 10px; }
 		.header .icon { float: right; margin: 12px 5px 0 0; width: 32px; height: 32px; }
 		.header .icon.results { background: url('../images/271.png') no-repeat top right; }
 		.header .icon.home { background: url('../images/202.png') no-repeat top right; }
