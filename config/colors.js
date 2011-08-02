@@ -1,47 +1,27 @@
 module.exports = [
   {
     id: 1,
-    name: 'Most creative',
-    description: 'This project shows extreme creativity'
+    colors: [ '540EAD', '502982', '340570', '8443D6', '9A6AD6' ],
+    scheme: 'purples'
   },
   {
     id: 2,
-    name: 'Best overall',
-    description: 'Edges might be a little rough but this is the best overall'
+    colors: [ 'AA00A2', '7F207B', ' 6E0069', 'D435CD', 'D460CF' ],
+    scheme: 'magentas'
   },
   {
     id: 3,
-    name: 'Best Face',
-    description: 'Your face looks good'
+    colors: [ '95EC00', '80B12C', '619A00', 'B2F63D', 'C4F66F' ],
+    scheme: 'purples'
   },
   {
     id: 4,
-    name: 'Great Teeth',
-    description: 'Not really.'
+    colors: [ '0A67A3', '24587A', '03426A', '3E97D1', '65A6D1' ],
+    scheme: 'blues'
   },
   {
     id: 5,
-    name: '100% Beef',
-    description: 'Moooooooooooooooo'
-  },
-  {
-    id: 6,
-    name: 'Coolest',
-    description: 'AWWWWWW YEAHHH'
-  },
-  {
-    id: 7,
-    name: 'blahblahblah',
-    description: 'This project shows extreme creativity'
-  },
-  {
-    id: 8,
-    name: 'Most creative',
-    description: 'This project shows extreme creativity'
-  },
-  {
-    id: 9,
-    name: 'Most creative',
-    description: 'This project shows extreme creativity'
+    colors: [ 'FF8B00', 'BF7E30', 'A65A00', 'FFA840', 'FFBF73' ],
+    scheme: 'oranges'
   },
 ];

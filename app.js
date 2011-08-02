@@ -7,6 +7,7 @@ var express = require('express'),
     io = require('socket.io'),
     projects = require('./config/projects'),
     polls = require('./config/polls'),
+    colors = require('./config/colors'),
     app = module.exports = express.createServer(),
     io = io.listen(app),
     jeb = require('./lib/jeb');
@@ -37,7 +38,8 @@ app.get('/', function(req, res){
   res.render('index', {
     title: 'Recount',
     projects: projects,
-    polls: polls
+    polls: polls,
+    colors: colors
   });
 });
 
@@ -45,7 +47,8 @@ app.get('/results', function(req, res){
   res.render('results', {
     title: 'Results',
     projects: projects,
-    polls: polls
+    polls: polls,
+    colors: colors
   });
 });
 

@@ -8,9 +8,10 @@ html
 
     script(src="/scripts/external/ender.min.js")
     script(src="/scripts/controller/project.js")
-    script(src="/scripts/main.js")
     script(src="/socket.io/socket.io.js")
     script
       var polls = !{JSON.stringify(polls)},
+          colors = !{JSON.stringify(colors)},
           projects = !{JSON.stringify(projects)},
           socket = io.connect('http://recount.ehowdev.com');
+    script(src="/scripts/main.js")
