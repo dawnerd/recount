@@ -29,7 +29,11 @@ socket.on('getAllVotes', function(data) {
 
 
 function updateResults(data) {
-	console.log(data)
+	for(var i = polls.length; i--;) {
+		polls[i].count = 0;
+	}
+
+
 	for(var i = data.length; i--;) {
 		for(var ii = polls.length; ii--;) {
 			if(polls[ii].id == parseInt(data[i].poll_id)) {
@@ -53,15 +57,13 @@ function updateResults(data) {
 			if(data[ii].poll_id != poll.id) continue;
 
 			var project = data[ii],
-					percent = Math.round(poll.count / project.count * 100);
+					percent = Math.round(project.count / poll.count * 100);
 
 			if(isNaN(percent) || !isFinite(percent)) {
 				percent = '1px';
 			} else {
 				percent = percent+'%';
 			}
-
-			console.log(poll.count, project.count, percent)
 
 			poll_container.find('dd[data-id="'+project.project_id+'"] .bar').animate({
 				'width': percent
