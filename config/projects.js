@@ -8,7 +8,8 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   },
   {
     id: 4,
@@ -41,7 +44,8 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   },
   {
     id: 5,
@@ -52,7 +56,8 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ module.exports = [
     authors: [
       'Troy Whiteley',
       'Alex Lea'
-    ]
+    ],
+    count: 0
   }
 ];

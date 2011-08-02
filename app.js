@@ -52,7 +52,7 @@ app.get('/results', function(req, res){
   });
 });
 
-app.listen(3001);
+app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 io.sockets.on('connection', function (socket) {
@@ -60,7 +60,16 @@ io.sockets.on('connection', function (socket) {
     jeb.vote(data.poll_id, data.project_id)
   });
 
+  socket.on('getAllVotes', function(data) {
+    jeb.getAllVotes();
+  });
+
   jeb.on('voted', function(data) {
     socket.emit('votes', data);
-  })
+    jeb.getAllVotes();
+  });
+
+  jeb.on('getAllVotes', function(data) {
+    socket.emit('getAllVotes', data);
+  });
 });
