@@ -42,13 +42,14 @@ var ProjectController = $.Fidel.extend({
   hideVoteBox: function(e) {
     if(e.preventDefault) e.preventDefault();
 
+
     var target = $(e.target);
-    if(target.hasClass('.projectContainer')) {
+    if(!target.hasClass('projectContainer')) {
       var parent = $(e.target).closest('.projectContainer');
     } else {
-      var parent = target;
+      var parent = $(target);
     }
-
+    
     var slider = parent.find('.slider');
 
     slider.animate({marginLeft: '0', duration: 250});
