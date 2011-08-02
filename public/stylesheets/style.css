@@ -23,6 +23,7 @@ html .FLC { #height: 1%; }
 .tar { text-align: right; }
 .fl { float: left; }
 .fr { float: right; }
+.bdr5 { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 
 .box { margin: 0 15px 20px 0; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ccc; background: #f6f6f6; }
 .box { box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20); -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);}
@@ -32,7 +33,10 @@ html .FLC { #height: 1%; }
 	.box img { margin-bottom: 10px; }
 
 .header { float: left; width: 100%; padding: 25px 0; }
-	.header h1 { font-size: 36px; }
+	.header h1 { font-size: 36px; float: left; }
+		.header .icon { float: right; margin: 12px 5px 0 0; width: 32px; height: 32px; }
+		.header .icon.results { background: url('../images/271.png') no-repeat top right; }
+		.header .icon.home { background: url('../images/202.png') no-repeat top right; }
 
 .inset { text-shadow: #fff 0 2px 1px, #ddd 0 -1px 0;}
 
@@ -44,7 +48,7 @@ html .FLC { #height: 1%; }
     #Projects .box .footer a { margin-right: 10px; font-size: 10px; text-decoration: underline; }
 		#Projects .box .footer button { margin-right: 15px; }
   #Projects .box .scroller { margin-top: 15px; height: 275px; overflow: auto; }
-  #Projects .box .checkbar { padding: 5px; display: block; margin: 10px 0; font-weight: bold; text-decoration: none; }
+  #Projects .box .checkbar { padding: 5px 10px; display: block; margin: 5px 0; font-weight: bold; text-decoration: none; margin-right: 5px; }
     #Projects .box .checkbar:hover { background: #B2B2A6; color: #fff; }
     #Projects .box .checkbar .description { display: block; font-weight: normal; font-size: 10px; }
   #Projects .box .checkbar.selected { background: #383A47; color: #fff; }

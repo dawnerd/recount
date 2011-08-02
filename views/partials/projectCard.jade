@@ -19,7 +19,7 @@ div.box.projectContainer(data-project="#{project.id}")
           strong Like me? - Vote for me below.
         div.scroller
           - each poll in polls
-            a(href="#", data-id="#{poll.id}").checkbar #{poll.name}
+            a(href="#", data-id="#{poll.id}").checkbar.bdr5 #{poll.name}
               span.description #{poll.description}
         div.footer
           a(href="#").cancel cancel
