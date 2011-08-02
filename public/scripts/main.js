@@ -15,8 +15,21 @@ function colorPolls(target) {
   });
 }
 
-if(colors!==undefined && $('#Results').length>0) {
+function colorChoices(target) {
+  target = $(target);
+  var numP = colors.length;
+  target.each(function(){
+    var p = 0;
+    $('a.checkbar', this).each(function() {
+      $(this).css({ 'color' : '#'+colors[p%numP]['colors'][0] });
+      p++;  // next poll
+    });
+  });
+}
+
+if(colors!==undefined) {
   colorPolls('#Results .poll');
+  colorChoices('#Projects .box');
 }
 
 socket.emit('getAllVotes');

@@ -48,12 +48,12 @@ html .FLC { #height: 1%; }
     #Projects .box .footer a { margin-right: 10px; font-size: 10px; text-decoration: underline; }
 		#Projects .box .footer button { margin-right: 15px; }
   #Projects .box .scroller { margin-top: 15px; height: 275px; overflow: auto; }
-  #Projects .box .checkbar { padding: 5px 10px; display: block; margin: 5px 0; font-weight: bold; text-decoration: none; margin-right: 5px; }
-    #Projects .box .checkbar:hover { background: #B2B2A6; color: #fff; }
+  #Projects .box .checkbar { padding: 5px 40px 5px 10px; display: block; margin: 5px 0; font-weight: bold; text-decoration: none; margin-right: 5px; }
+    #Projects .box .checkbar:hover, #Projects .box .checkbar.selected { background: #ccc url('../images/207.png') no-repeat right; color: #fff; }
     #Projects .box .checkbar .description { display: block; font-weight: normal; font-size: 10px; }
-  #Projects .box .checkbar.selected { background: #383A47; color: #fff; }
-  #Projects .box .checkbar.unavailable { background: #ccc; color: #4c4c4c; opacity: .25; cursor: default; }
-  #Projects .box .checkbar.voted { background: #5A5A64; color: #fff; }
+  #Projects .box .checkbar.selected { background-color: #bbb; }
+  #Projects .box .checkbar.unavailable { /* background: none; color: #ccc !important; cursor: default; */ display: none; }
+  #Projects .box .checkbar.voted { color: #fff !important; background: #8c8c8c url('../images/208.png') no-repeat right; }
 
 #Projects .slider { width: 700px; }
 

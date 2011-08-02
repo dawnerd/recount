@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: 1,
-    name: 'Example project',
+    name: 'Example project 1',
     desc: 'This is a description for a project',
     img: 'http://dummyimage.com/278x120/666/fff',
     url: 'about:blank',
@@ -14,7 +14,7 @@ module.exports = [
   {
     id: 2,
     name: 'Example project 2',
-    desc: 'This is a description for a project',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel leo nisi, a convallis enim. Maecenas condimentum magna ac velit eleifend vulputate. In hac habitasse platea dictumst. Maecenas rhoncus ultrices mi id vulputate. ',
     img: 'http://dummyimage.com/278x120/666/fff',
     url: 'about:blank',
     authors: [
@@ -38,7 +38,7 @@ module.exports = [
   {
     id: 4,
     name: 'Example project 4',
-    desc: 'This is a description for a project',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel leo nisi, a convallis enim. Maecenas condimentum magna ac velit eleifend vulputate. In hac habitasse platea dictumst. Maecenas rhoncus ultrices mi id vulputate. ',
     img: 'http://dummyimage.com/278x120/666/fff',
     url: 'about:blank',
     authors: [

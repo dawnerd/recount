@@ -11,8 +11,8 @@ module.exports = [
   },
   {
     id: 3,
-    colors: [ '95EC00', '80B12C', '619A00', 'B2F63D', 'C4F66F' ],
-    scheme: 'purples'
+    colors: [ '80B12C', '95EC00', '619A00', 'B2F63D', 'C4F66F' ],
+    scheme: 'greens'
   },
   {
     id: 4,
