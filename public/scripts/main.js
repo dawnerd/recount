@@ -46,7 +46,6 @@ function updateResults(data) {
 		polls[i].count = 0;
 	}
 
-
 	for(var i = data.length; i--;) {
 		for(var ii = polls.length; ii--;) {
 			if(polls[ii].id == parseInt(data[i].poll_id)) {
@@ -82,6 +81,7 @@ function updateResults(data) {
 				'width': percent
 			});
 
+      // Add vote count to bars
       if(project.count>0) {
         poll_container.find('dd[data-id="'+project.project_id+'"] .bar').html('<span>'+project.count+'</span>');
       }

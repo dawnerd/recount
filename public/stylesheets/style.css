@@ -23,6 +23,7 @@ html .FLC { #height: 1%; }
 .tar { text-align: right; }
 .fl { float: left; }
 .fr { float: right; }
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bdr5 { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 
 .box { margin: 0 15px 20px 0; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ccc; background: #f6f6f6; }

@@ -5,7 +5,7 @@ div.box.projectContainer(data-poll="#{poll.id}")
       h2 #{poll.name}
       dl.FLC
         - each project in projects
-          dt(data-id="#{project.id}") #{project.name}
+          dt(data-id="#{project.id}").ellipsis #{project.name}
           dd(data-id="#{project.id}")
             div.bar(style="width: 5px")
     div.footer
